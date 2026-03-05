@@ -2,6 +2,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"message": "Clara AI API running"}
+
 @app.get("/api")
-def home():
-    return {"message": "Clara AI API is running"}
+def api():
+    return {"message": "Clara AI endpoint working"}
