@@ -4,8 +4,8 @@ import os
 
 app = FastAPI()
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 @app.get("/")
 def home():
-    return FileResponse(os.path.join(BASE_DIR, "public", "index.html"))
+    return FileResponse(os.path.join(BASE_DIR, "..", "public", "index.html"))
