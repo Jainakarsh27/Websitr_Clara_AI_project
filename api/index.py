@@ -8,4 +8,5 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 @app.get("/")
 def home():
-    return FileResponse(os.path.join(BASE_DIR, "public", "index.html"))
+    file_path = os.path.join(BASE_DIR, "public", "index.html")
+    return FileResponse(file_path)
