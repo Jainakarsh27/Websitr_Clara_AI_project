@@ -1,0 +1,76 @@
+{
+  "name": "Onboarding Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "command": "python /opt/scripts/extract_onboarding_data.py --transcript /opt/dataset/onboarding_calls/onboarding_001.txt --account_id account_001"
+      },
+      "name": "Extract Onboarding Data",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "command": "python /opt/scripts/apply_patch.py --account_id account_001"
+      },
+      "name": "Apply Patch (v2)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "command": "python /opt/scripts/generate_agent_prompt.py --account_id account_001 --version v2"
+      },
+      "name": "Generate v2 Prompt",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "command": "python /opt/scripts/generate_diff.py --account_id account_001"
+      },
+      "name": "Create Changelog",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Extract Onboarding Data": {
+      "main": [
+        [
+          {
+            "node": "Apply Patch (v2)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Apply Patch (v2)": {
+      "main": [
+        [
+          {
+            "node": "Generate v2 Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate v2 Prompt": {
+      "main": [
+        [
+          {
+            "node": "Create Changelog",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

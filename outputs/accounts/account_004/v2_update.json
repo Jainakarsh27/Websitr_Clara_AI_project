@@ -1,0 +1,13 @@
+{
+    "business_hours": {
+        "days": "Monday-Friday",
+        "start": "8:30 AM",
+        "end": "5:30 PM",
+        "timezone": "CST. 45 seconds timeout"
+    },
+    "call_transfer_rules": {
+        "transfer_timeout": 45,
+        "retry_attempts": 1,
+        "what_to_say_if_fails": "I'm sorry, I'm having trouble connecting you. Let me try another way."
+    }
+}

@@ -1,0 +1,11 @@
+[Agent]: Hi, this is Clara calling from Example Fire Protection demo line. I'm here to learn more about how you handle your calls.
+[Client]: Hi Clara. Yeah, so we're a fire protection contractor. We mostly get sprinkler leak emergencies and sometimes fire alarm issues.
+[Agent]: I see. And how do you handle those emergencies?
+[Client]: Well, if it's a sprinkler leak, we need to get someone out there fast. Usually, we transfer those to our dispatch team.
+[Agent]: Got it. What about non-emergencies? 
+[Client]: For regular stuff, we just take a message and call them back during office hours.
+[Agent]: And what are your office hours?
+[Client]: Oh, we haven't quite settled on the exact times for the new branch, but it's usually standard business hours.
+[Agent]: Understood. Are there any specific integrations you use?
+[Client]: We use ServiceTrade for jobs, but we're still figuring out the exact workflow for that.
+[Agent]: Thank you. I have the basic info for now. I'll record that we need to confirm office hours and integration details later.

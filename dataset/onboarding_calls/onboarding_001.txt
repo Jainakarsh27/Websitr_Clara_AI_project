@@ -1,0 +1,12 @@
+[Onboarding Specialist]: Welcome to the onboarding call for Example Fire Protection. Let's finalize your operational rules.
+[Client]: Great, let's do it.
+[Onboarding Specialist]: Can you confirm your business hours?
+[Client]: Yes, we've decided on Monday-Friday, 8:00 AM to 5:00 PM EST.
+[Onboarding Specialist]: Perfect. And your emergency definitions?
+[Client]: Sprinkler leaks and fire alarm triggers are the big ones.
+[Onboarding Specialist]: How long should the system wait before failing a transfer to dispatch?
+[Client]: Let's go with 60 seconds.
+[Onboarding Specialist]: Any integration constraints?
+[Client]: Yes, very important: Never create sprinkler jobs in ServiceTrade directly from the AI. We want dispatch to review those first.
+[Onboarding Specialist]: Got it. Anything else? 
+[Client]: That's about it for now.

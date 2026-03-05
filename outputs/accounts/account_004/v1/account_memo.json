@@ -1,0 +1,29 @@
+{
+    "account_id": "account_004",
+    "company_name": "Unknown",
+    "business_hours": {
+        "days": null,
+        "start": null,
+        "end": null,
+        "timezone": null
+    },
+    "office_address": null,
+    "services_supported": [],
+    "emergency_definition": [],
+    "emergency_routing_rules": [
+        "Transfer emergencies to dispatch"
+    ],
+    "non_emergency_routing_rules": [
+        "Take message during office hours"
+    ],
+    "call_transfer_rules": {
+        "transfer_timeout": 60,
+        "retry_attempts": 0,
+        "what_to_say_if_fails": "I'm sorry, I'm having trouble connecting you. Let me try another way."
+    },
+    "integration_constraints": [],
+    "after_hours_flow_summary": "Collect name, phone, address for emergencies; take message for others.",
+    "office_hours_flow_summary": "Greet, ask purpose, collect details, route/transfer.",
+    "questions_or_unknowns": [],
+    "notes": "Generated from demo call transcript."
+}

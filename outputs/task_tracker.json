@@ -1,0 +1,37 @@
+[
+    {
+        "task_id": "TASK-account_001",
+        "title": "Deploy Retell Agent for Unknown",
+        "status": "Pending v2 Onboarding",
+        "priority": "High",
+        "account_id": "account_001"
+    },
+    {
+        "task_id": "TASK-account_002",
+        "title": "Deploy Retell Agent for Unknown",
+        "status": "Pending v2 Onboarding",
+        "priority": "High",
+        "account_id": "account_002"
+    },
+    {
+        "task_id": "TASK-account_003",
+        "title": "Deploy Retell Agent for Unknown",
+        "status": "Pending v2 Onboarding",
+        "priority": "High",
+        "account_id": "account_003"
+    },
+    {
+        "task_id": "TASK-account_004",
+        "title": "Deploy Retell Agent for Unknown",
+        "status": "Pending v2 Onboarding",
+        "priority": "High",
+        "account_id": "account_004"
+    },
+    {
+        "task_id": "TASK-account_005",
+        "title": "Deploy Retell Agent for Unknown",
+        "status": "Pending v2 Onboarding",
+        "priority": "High",
+        "account_id": "account_005"
+    }
+]

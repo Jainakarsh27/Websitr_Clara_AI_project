@@ -1,0 +1,12 @@
+{
+    "business_hours": {
+        "days": "Monday-Friday",
+        "start": "9:00 AM",
+        "end": "6:00 PM",
+        "timezone": "PST. Fire alarm triggers and sprinkler leaks"
+    },
+    "emergency_definition": [
+        "sprinkler leak",
+        "fire alarm trigger"
+    ]
+}

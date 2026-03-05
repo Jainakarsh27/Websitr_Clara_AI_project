@@ -1,0 +1,35 @@
+{
+    "account_id": "account_003",
+    "company_name": "Unknown",
+    "business_hours": {
+        "days": "Monday-Friday",
+        "start": "7:00 AM",
+        "end": "4:00 PM",
+        "timezone": "MST. Never create sprinkler jobs in ServiceTrade"
+    },
+    "office_address": null,
+    "services_supported": [
+        "sprinkler"
+    ],
+    "emergency_definition": [
+        "sprinkler leak"
+    ],
+    "emergency_routing_rules": [
+        "Transfer emergencies to dispatch"
+    ],
+    "non_emergency_routing_rules": [
+        "Take message during office hours"
+    ],
+    "call_transfer_rules": {
+        "transfer_timeout": 60,
+        "retry_attempts": 0,
+        "what_to_say_if_fails": "I'm sorry, I'm having trouble connecting you. Let me try another way."
+    },
+    "integration_constraints": [
+        "Never create sprinkler jobs in ServiceTrade directly"
+    ],
+    "after_hours_flow_summary": "Collect name, phone, address for emergencies; take message for others.",
+    "office_hours_flow_summary": "Greet, ask purpose, collect details, route/transfer.",
+    "questions_or_unknowns": [],
+    "notes": "Updated with onboarding call data."
+}

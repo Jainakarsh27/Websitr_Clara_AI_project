@@ -1,0 +1,36 @@
+{
+  "name": "Demo Pipeline",
+  "nodes": [
+    {
+      "parameters": {
+        "command": "python /opt/scripts/extract_demo_data.py --transcript /opt/dataset/demo_calls/demo_001.txt --account_id account_001"
+      },
+      "name": "Extract Demo Data",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "command": "python /opt/scripts/generate_agent_prompt.py --account_id account_001 --version v1"
+      },
+      "name": "Generate v1 Prompt",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [650, 300]
+    }
+  ],
+  "connections": {
+    "Extract Demo Data": {
+      "main": [
+        [
+          {
+            "node": "Generate v1 Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}
